@@ -1,0 +1,24 @@
+External
+se pun in fisiere-css
+se pun doar stilurile
+ca sa fie conectat - in Head se plaseaza
+elementul
+"Link" cu atributul rel="stylesheet" href"calea/pana/la/still.css"
+<head>
+<link rel="stylesheet" href="">
+<?head>
+
+
+Css specificity - specificitatea stilurilor( prioritatea )
+1. Daca 2 stiluri cu acceasi greutate (id vs id, class vs class) atunci ultimul care e scris cistiga
+
+2. Ca sa distingi prioritatile usor:
+ stilurile : inline> #id > .class > tag > :pseudo > parent > default
+     !important >>>> decit toti
+
+ 3. Complex selectors:
+   body #box .inner p:nth-child(odd) {//100+10+1+10}=122
+
+      #box .inner .active p {//100+20+1} = 121
+
+  cistiga ultimul sau cel mai puternic    
